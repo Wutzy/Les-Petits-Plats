@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <img src="assets/images/logo.svg" alt="logo les petits chefs">
+            <h1>Les petits chefs</h1>
+        </header>
+        <main>
+            <div class="search-container">
+                <form action="" class="form_search">
+                  <input type="text" placeholder="Rechercher une recette" name="search" class="input_searchbar">
+                  <img src="assets/icones/search-24px 1.svg" class="icon_search"></img>
+                </form>
+            </div>
+            <div class="filters">
+                <div class="dropdown dropdown_ingredients">
+                    <div class="btn btn-secondary" type="button" id="dropdownMenuButtonIngredients" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input type="text" placeholder="Ingredients" name="search" class="input_searchbar_ingredients">
+                    </div>
+                    <img src="assets/icones/expand_more-24px 4.svg" alt="icon expand" class="icon_expand icon_expand_ingredients">
+                    <img src="assets/icones/expand_more-24px 4.svg" alt="icon expand" class="icon_expand icon_less_ingredients">
+                    <div class="dropdown-menu dropdown-menu-ingredients" aria-labelledby="dropdownMenuButtonIngredients">
+                      <ul class="list-ingredients">
+
+                      </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_appareils">
+                    <div class="btn btn-secondary" type="button" id="dropdownMenuButtonAppareils" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input type="text" placeholder="Appareils" name="search" class="input_searchbar_appareils">
+                    </div>
+                    <img src="assets/icones/expand_more-24px 4.svg" alt="icon expand" class="icon_expand">
+                    <div class="dropdown-menu dropdown-menu-appareils" aria-labelledby="dropdownMenuButtonAppareils">
+                      <ul class="list-appliances">
+
+                      </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_ustensiles">
+                    <div class="btn btn-secondary" type="button" id="dropdownMenuButtonUstensiles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input type="text" placeholder="Ustensiles" name="search" class="input_searchbar_ustensiles">
+                    </div>
+                    <img src="assets/icones/expand_more-24px 4.svg" alt="icon expand" class="icon_expand">
+                    <div class="dropdown-menu dropdown-menu-ustensiles" aria-labelledby="dropdownMenuButtonUstensiles">
+                      <ul class="list-ustensils">
+
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="recipes_section">
+
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="data/recipes.js"></script>
+    <script src="scripts/utils/recipes.js"></script>
+    <script src="scripts/factory/recipe.js"></script>
+    <script src="scripts/pages/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

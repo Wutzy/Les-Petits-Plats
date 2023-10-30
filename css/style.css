@@ -1,0 +1,225 @@
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #D04F4F;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+}
+
+.container {
+    max-width: 1270px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_search {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.input_searchbar {
+    height: 69px;
+    width: 1240px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    background-color: #E7E7E7;
+}
+.input_searchbar_ingredients, .input_searchbar_appareils, .input_searchbar_ustensiles
+{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.icon_search
+{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    margin-right: 20px;
+}
+
+.filters {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dropdown > .dropdown-menu {
+    display: none;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 1000px;
+    padding-right: 8px;
+}
+.dropdown > div {
+    display: flex;
+    border: none;
+}
+.dropdown > input {
+    padding: 23px 69px 24px  19px;
+    border: none;
+    width: 100%;
+    color: white;
+}
+.input_searchbar_appareils, .input_searchbar_ingredients ,.input_searchbar_ustensiles {
+    color: white;
+}
+.input_searchbar_appareils:focus, .input_searchbar_ingredients:focus, .input_searchbar_ustensiles:focus{
+    outline: none;
+}
+.dropdown > img {
+    margin-left: -30px;
+}
+
+#dropdownMenuButtonIngredients, .dropdown-menu-ingredients, .input_searchbar_ingredients
+{
+    background-color: #3282F7;
+}
+
+#dropdownMenuButtonAppareils, .dropdown-menu-appareils, .input_searchbar_appareils
+{
+    background-color: #68D9A4;
+}
+#dropdownMenuButtonUstensiles, .dropdown-menu-ustensiles, .input_searchbar_ustensiles
+{
+    background-color: #ED6454;
+}
+
+.dropdown-menu-ingredients, .dropdown-menu-appareils, .dropdown-menu-ustensiles {
+    padding: 23px 63px 24px 19px;
+    margin-top : -5px;
+    border: none;
+    width: 100%;
+}
+
+.list-ingredients {
+    height: 430px;
+}
+
+.recipes_section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1270px;
+    justify-content: space-between;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 335px;
+    margin-bottom: 50px;
+    width: 380px;
+    background-color: #E7E7E7;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.header_card {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+
+}
+
+.list-ingredients, .list-appliances, .list-ustensils {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.list-ingredients > li, .list-appliances > li, .list-ustensils > li  {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 28%;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2, h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.recipe_time {
+    display: flex;
+    align-items: center;
+}
+
+.timer_img {
+    width: 20px;
+    height: 20px;
+}
+
+.div_img_recipe {
+margin-bottom: 20px;
+}
+
+.recipes_titles {
+    max-width: 250px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+
+.recipe_body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px 0px 18px;
+}
+
+.recipe_list_ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    line-height: 14.4px;
+}
+.recipe_list_ingredients > li {
+    font-size: 12px;
+    color: black;
+}
+.recipe_description {
+    font-size: 12px;
+    line-height: 12px;
+    width: 50%;
+}
+.description_paragraph {
+    height: 95px;
+    overflow: hidden;
+}
+
+ul {
+    margin-bottom: unset;
+    padding-left: 0px;
+}
+
+p{
+    margin: unset;
+}
+
+.icon_expand_ingredients {
+    z-index: 99;
+}
+
+.icon_less_ingredients {
+    display: none;
+}
